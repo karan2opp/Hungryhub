@@ -104,6 +104,7 @@ export function Hero() {
               src="/images/hero-food.jpg"
               alt="Signature loaded burger and cheesy pizza at Hungry Hub"
               variant="red"
+              objectPosition="center 88%"
               className="aspect-[4/5] w-full rounded-[2.5rem] shadow-soft ring-1 ring-ink-950/5"
             />
 

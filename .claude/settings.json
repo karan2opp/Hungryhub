@@ -28,7 +28,11 @@
       "Bash(curl -sL --http1.1 -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.0.0 Safari/537.36\" -H \"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\" -H \"Accept-Language: en-US,en;q=0.9\" -D /tmp/jd-headers.txt \"https://www.justdial.com/Pehowa/Hungry-Hub-Opposite-Gupta-Petrol-Pump-Nand-Colony/9999P1744-1744-220605015449-C1B6_BZDET\" -o /tmp/jd2.html -w \"HTTP %{http_code}, size %{size_download}\\\\n\")",
       "Bash(rm -f scrape.mjs jd-debug.png)",
       "WebSearch",
-      "PowerShell($c = Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue; if \\($c\\) { $c.OwningProcess | Sort-Object -Unique | ForEach-Object { Stop-Process -Id $_ -Force -Confirm:$false }; \"stopped\" } else { \"not running\" })"
+      "PowerShell($c = Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue; if \\($c\\) { $c.OwningProcess | Sort-Object -Unique | ForEach-Object { Stop-Process -Id $_ -Force -Confirm:$false }; \"stopped\" } else { \"not running\" })",
+      "Bash(node inspect-live.mjs)",
+      "Bash(node inspect-live2.mjs)",
+      "Bash(node inspect3.mjs)",
+      "Bash(node inspect4.mjs)"
     ]
   }
 }

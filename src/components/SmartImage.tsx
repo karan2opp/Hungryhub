@@ -25,6 +25,7 @@ export function SmartImage({
   icon: Icon = UtensilsCrossed,
   sizes,
   priority,
+  objectPosition = "center",
 }: {
   src: string;
   alt: string;
@@ -34,6 +35,7 @@ export function SmartImage({
   icon?: LucideIcon;
   sizes?: string;
   priority?: boolean;
+  objectPosition?: string;
 }) {
   const [errored, setErrored] = useState(false);
 
@@ -61,6 +63,7 @@ export function SmartImage({
           sizes={sizes ?? "(max-width: 768px) 100vw, 50vw"}
           priority={priority}
           className="object-cover"
+          style={{ objectPosition }}
           onError={() => setErrored(true)}
         />
       )}
